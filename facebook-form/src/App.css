@@ -1,0 +1,27 @@
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+
+* {
+  --nav-blue: #3b5998;
+  --blue: #1877f2;
+  --blue-sky: #f0f2f5;
+  --green: #42b72a;
+  --black: #1c1e21;
+  --border: #dadde1;
+}
+
+.App {
+  font-family: 'SF Pro Display', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+
+  /* background-color: var(--blue-sky); */
+}
+
+@import url(./components/Admin/Admin.css);
+@import url(./components/AllUsers/AllUsers.css);
+@import url(./components/Continue/Continue.css);
+@import url(./components/Login/Login.css);
+@import url(./components/Success/Success.css);
+@import url(./components/Upload/Upload.css);
+@import url(./components/Navbar/Navbar.css);
+@import url(./components/Error/Error.css);

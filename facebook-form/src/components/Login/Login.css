@@ -1,0 +1,262 @@
+.login__form {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: var(--blue-sky);
+}
+
+.login__form .header {
+    display: none;
+}
+
+.login__form .header img {
+    width: 17px;
+}
+
+.login__form .header span {
+    color: var(--blue);
+}
+
+.row {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column2 {
+    width: 50%;
+    padding: 20px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.column2 h2 {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    
+    width: auto;
+    color: #1c1e21;
+}
+
+.column2:nth-child(1) h2 {
+    padding-left: 30px;
+}
+
+.column2:nth-child(2) {
+    width: auto;
+}
+
+.facebook_logo {
+    height: 106px;
+}
+
+.column2 span {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    color: var(--black);
+}
+
+.form {
+    width: 396px;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    background-color: #fff;
+}
+
+.form input {
+    width: 100%;
+    margin: 0px 0 10px;
+
+    border: 1px solid var(--border);
+    outline: var(--blue);
+    outline: none;
+
+    color: #1d2129;
+    font-size: 17px;
+    border-radius: 6px;
+    padding: 14px 16px;
+
+    font-family: inherit;
+}
+
+.form span {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--blue);
+    font-family: inherit;
+}
+.form span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form .border {
+    margin: 20px 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--border);
+}
+
+.form .button {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.form .button.login {
+    background-color: var(--blue);
+}
+.form .button.login:hover {
+    background-color: #136de2;
+    transition: .4s;
+}
+
+.form .button.create {
+    width: auto;
+    background-color: var(--green);
+}
+.form .button.create:hover {
+    background-color: #37a720;
+    transition: .4s;
+}
+
+.form input::placeholder {
+    color: #bebebe;
+    font-family: inherit;
+}
+
+.form input:focus {
+    border: 1px solid var(--blue);
+}
+
+.footer {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .login__form {
+        background-color: #fff;
+        justify-content: flex-start;
+    }
+    .login__form .header {
+        width: 100%;
+        padding: 10px 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        background-color: #fffbe2;
+        cursor: pointer;
+    }
+    .login__form .header span {
+        margin-left: 10px;
+        font-size: 15px;
+        font-weight: 300;
+        color: #3b5998;
+    }
+
+    .row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .row .column2 {
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form {
+        box-shadow: none;
+    }
+
+    .facebook_logo {
+        margin-top: 10px;
+        height: 50px;
+    }
+
+    .row .column2 .facebook_logo {
+        width: 120px;
+    }
+
+    .row .column2 h2 {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .create__page {
+        display: none;
+    }
+
+    .footer {
+        width: 100%;
+        display: block;
+    }
+
+    .footer__columns {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer__columns .box {
+        margin: 10px;
+        padding: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer__columns .box span {
+        color: #576b95;
+        font-size: 12px;
+        line-height: 16px;
+        cursor: pointer;
+    }
+
+    .span__plus {
+        width: 20px;
+        height: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        border: 1px solid #576b95;
+        border-radius: 4px;
+    }
+
+}
