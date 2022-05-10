@@ -24,7 +24,7 @@ function AllUsers() {
     }
   }
 
-  if(users.length === 0) return null
+  if(!users || users.length === 0) return null
 
   return (
     <div className='all_users_page'>
