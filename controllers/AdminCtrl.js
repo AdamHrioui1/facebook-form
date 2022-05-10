@@ -35,8 +35,7 @@ const AdminCtrl = {
 
                 const accessstoken = createAccessToken({ id: user.id })
                 return res.status(200).json({ accessstoken })
-            })
-            return res.status(200).json({ msg: 'refreshtoken bro!!'})      
+            })     
         } catch (err) {
             return res.status(500).json({ msg: err.message })
         }
